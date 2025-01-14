@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha Interativa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-center">Planilha Interativa</h1>
+        <nav class="nav nav-tabs" id="tabMenu">
+            <a class="nav-link active" id="tab-qualidade" href="#qualidade" data-bs-toggle="tab">Qualidade</a>
+            <a class="nav-link" id="tab-tabela1" href="#tabela1" data-bs-toggle="tab">Tabela1</a>
+        </nav>
+        <div class="tab-content mt-3">
+            <!-- Qualidade Tab -->
+            <div class="tab-pane fade show active" id="qualidade">
+                <h3>Qualidade</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Número da Amostra</th>
+                            <th>Código</th>
+                            <th>Data da Amostra</th>
+                            <th>Data de Validade</th>
+                            <th>Placa</th>
+                            <th>Turno</th>
+                            <th>Produto</th>
+                            <th>Tonelada</th>
+                            <th>Lote</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dados dinâmicos da aba "Qualidade" -->
+                        <tr>
+                            <td>1</td>
+                            <td>EXP-1</td>
+                            <td>2024-02-23</td>
+                            <td>2026-02-23</td>
+                            <td>RHS-1246</td>
+                            <td>A</td>
+                            <td>11 52 00</td>
+                            <td>12</td>
+                            <td>234566</td>
+                        </tr>
+                        <!-- Adicione mais linhas conforme necessário -->
+                    </tbody>
+                </table>
+            </div>
+            <!-- Tabela1 Tab -->
+            <div class="tab-pane fade" id="tabela1">
+                <h3>Tabela1</h3>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Especificação de Finos</th>
+                            <th>N</th>
+                            <th>P</th>
+                            <th>K</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dados dinâmicos da aba "Tabela1" -->
+                        <tr>
+                            <td>00 24 00 14H2O</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>60</td>
+                        </tr>
+                        <!-- Adicione mais linhas conforme necessário -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
